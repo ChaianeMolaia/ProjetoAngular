@@ -29,48 +29,50 @@
     </ion-col>
   </ion-row>
   <!-- Conteúdo DS -->
-  <ion-row class="ion-justify-content-center">
-    <ion-col size="4">
-      <ion-card>
-        <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-        <ion-card-header>
-          <ion-card-title>Programação Mobile</ion-card-title>
-          <ion-card-subtitle>Ionic & Boostrap</ion-card-subtitle>
-        </ion-card-header>
-      
-        <ion-card-content>
-          Here's a small text description for the card content. Nothing more, nothing less.
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
-    <ion-col size="4">
-      <ion-card>
-        <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/3987066/pexels-photo-3987066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-        <ion-card-header>
-          <ion-card-title>Programação Mobile</ion-card-title>
-          <ion-card-subtitle>Síncrono & Assíncrono</ion-card-subtitle>
-        </ion-card-header>
-        <ion-card-content>
-          Here's a small text description for the card content. Nothing more, nothing less.
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
-    <ion-col size="4">
-      <ion-card>
-        <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-        <ion-card-header>
-          <ion-card-title>Programação Mobile</ion-card-title>
-          <ion-card-subtitle>HTML & CSS</ion-card-subtitle>
-        </ion-card-header>
-      
-        <ion-card-content>
-          Here's a small text description for the card content. Nothing more, nothing less.
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
-  </ion-row>
+  <ng-container *ngIf="this.item_selecionado == 'desenvolvimento_sistemas' ">
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="4">
+          <ion-card>
+            <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <ion-card-header>
+              <ion-card-title>Programação Mobile</ion-card-title>
+              <ion-card-subtitle>Ionic & Boostrap</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Here's a small text description for the card content. Nothing more, nothing less.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="4">
+          <ion-card>
+            <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/3987066/pexels-photo-3987066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <ion-card-header>
+              <ion-card-title>Programação Mobile</ion-card-title>
+              <ion-card-subtitle>Síncrono & Assíncrono</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              Here's a small text description for the card content. Nothing more, nothing less.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="4">
+          <ion-card>
+            <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <ion-card-header>
+              <ion-card-title>Programação Mobile</ion-card-title>
+              <ion-card-subtitle>HTML & CSS</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Here's a small text description for the card content. Nothing more, nothing less.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
 
   <!-- Conteúdo Informatica para Internet -->
+  <ng-container *ngIf="this.item_selecionado == 'informatica_internet' ">
   <ion-row class="ion-justify-content-center">
     <ion-col size="4">
       <ion-card>
@@ -113,6 +115,7 @@
   </ion-row>
   
   <!-- Conteúdo Química -->
+  <ng-container *ngIf="this.item_selecionado == 'quimica "></ng-container>
   <ion-row class="ion-justify-content-center">
     <ion-col size="4">
       <ion-card>
